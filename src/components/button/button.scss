@@ -1,0 +1,33 @@
+.button {
+  font-size: 13px;
+  background-color: #3369f3;
+  border-radius: 8px;
+  color: white;
+  height: 38px;
+  display: grid;
+  place-content: center;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  bottom: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #4573e8;
+  }
+}
+
+.link {
+  display: grid;
+  place-content: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  /* identical to box height, or 100% */
+
+  color: #3369f3;
+  background-color: transparent;
+}

@@ -1,0 +1,38 @@
+.input-wrapper {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  width: 100%;
+
+  .input {
+    width: 100%;
+    font-size: 17px;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #3369f3;
+    transition: all 0.1s;
+
+    &:focus,
+    &:active {
+      border-bottom: 1.5px solid #1c5cfc;
+    }
+  }
+
+  .label {
+    margin: 0;
+    color: #999999;
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+  }
+
+  .error {
+    font-size: 8px;
+  }
+}
