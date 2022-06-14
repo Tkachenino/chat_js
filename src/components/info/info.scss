@@ -1,0 +1,42 @@
+.user-info {
+  &__item {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #e4edfd;
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 13px;
+      /* identical to box height, or 100% */
+
+      color: #1e1e1e;
+      padding: 0;
+      margin: 0;
+    }
+
+    .value {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 13px;
+      /* identical to box height, or 100% */
+
+      text-align: right;
+
+      color: #999999;
+      padding: 0;
+      margin: 0;
+      margin-left: auto;
+    }
+  }
+}

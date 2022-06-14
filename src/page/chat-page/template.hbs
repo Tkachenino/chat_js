@@ -1,0 +1,45 @@
+<main class='chat'>
+  <section class='chat-sidebar'>
+    <div class='control-panel'>
+      <button class='control-panel__button-profile'>к профилю
+        <span class='material-icons'>keyboard_arrow_right</span></button>
+      <input type='search' placeholder='Поиск ...' />
+    </div>
+    <ul class='chat-list'>
+      {{#each chats}}
+        {{{this}}}
+      {{/each}}
+    </ul>
+  </section>
+  <section class='chat-main'>
+    <header class='header'>
+      <div class='header__info-wrapper'>
+        <img
+          class='image'
+          src='https://images.unsplash.com/profile-1589352637695-cd91ccd020f0image?dpr=2&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff'
+        />
+        <h3 class='name'>Андрей</h3>
+      </div>
+      <button class='header__button' type='submit'>
+        <span class='material-icons'>format_list_bulleted</span>
+      </button>
+    </header>
+    <div class='messsage-area'>
+      <div class='date-section'>
+        <h3 class='date-section__time'>Вчера</h3>
+        {{#each messages}}
+          {{{this}}}
+        {{/each}}
+      </div>
+    </div>
+    <form class='message-form'>
+      <button class='message-form__button' type='button'>
+        <span class='material-icons'>file_present</span>
+      </button>
+      <input class='message-form__input' type='text' name='message' />
+      <button class='message-form__button' type='submit'>
+        <span class='material-icons'>send</span>
+      </button>
+    </form>
+  </section>
+</main>

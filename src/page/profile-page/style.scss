@@ -1,0 +1,137 @@
+.profile {
+  display: flex;
+  height: 100vh;
+  box-sizing: border-box;
+
+  &__nav {
+    width: 65px;
+    height: 100vh;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: #e4edfd;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 20px 20px;
+    box-sizing: border-box;
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .username {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      /* identical to box height, or 100% */
+
+      text-align: center;
+
+      color: #1e1e1e;
+      padding: 0;
+      margin: 0;
+    }
+
+    .user-info {
+      &__list {
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+      }
+      &__item {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #e4edfd;
+        &:last-child {
+          border-bottom: none;
+
+          &.danger {
+            .link {
+              color: red;
+              cursor: pointer;
+            }
+          }
+        }
+        .label {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 13px;
+          /* identical to box height, or 100% */
+
+          color: #1e1e1e;
+          padding: 0;
+          margin: 0;
+        }
+
+        .value {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 13px;
+          /* identical to box height, or 100% */
+
+          text-align: right;
+
+          color: #999999;
+          padding: 0;
+          margin: 0;
+          margin-left: auto;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 450px;
+      gap: 15px;
+
+      div:last-of-type button {
+        background-color: orangered;
+      }
+    }
+
+    .profile-form {
+      &__data,
+      &__password {
+        width: 450px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

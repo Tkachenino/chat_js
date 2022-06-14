@@ -1,3 +1,20 @@
-@import './page/login/style.scss';
+@import './page/auth-page/style.scss';
+@import './page/register-page/style.scss';
+@import './page/404-page/style.scss';
+@import './page/500-page/style.scss';
+@import './page/chat-page/style.scss';
+@import './page/profile-page/style.scss';
 @import './components/input/input.scss';
 @import './components/button/button.scss';
+@import './components/chat-item/chat-item.scss';
+@import './components/message/message.scss';
+@import './components/info/info.scss';
+
+.shadow {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}

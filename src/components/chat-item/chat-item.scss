@@ -1,0 +1,100 @@
+.chat-item {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border-top: 1px solid #eaeaea;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #e4edfd;
+  }
+
+  &__image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-grow: 1;
+
+    .name {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 13px;
+      /* identical to box height, or 100% */
+
+      color: #1e1e1e;
+      margin: 0;
+      padding: 0;
+    }
+
+    .text {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      /* or 125% */
+
+      color: #999999;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__data-wrapper {
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .time {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 9px;
+      line-height: 13px;
+      /* identical to box height, or 144% */
+
+      text-align: right;
+
+      color: #999999;
+      margin: 0;
+      padding: 0;
+    }
+
+    .count {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #3369f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 12px;
+      /* identical to box height, or 109% */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+}
